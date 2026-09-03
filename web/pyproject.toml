@@ -7,6 +7,12 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "acornio (>=0.0.2,<0.0.3)",
+    "bobtail (>=0.3.0,<0.4.0)",
+    "bobtail-cors (>=0.0.1,<0.0.2)",
+    "bobtail-logger (>=0.0.1,<0.0.2)",
+    "bobtail-upload (>=0.0.1,<0.0.2)",
+    "bobtail-jinja2 (>=0.0.2,<0.0.3)"
 ]
 
 

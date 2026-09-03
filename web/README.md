@@ -1,6 +1,1 @@
 # Web
-
-
-# Tech Stack
-- 
-- Bobtail
