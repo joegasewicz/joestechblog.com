@@ -5,11 +5,12 @@ from bobtail_upload import BobtailUpload
 from bobtail_jinja2 import BobtailJinja2
 
 from app.routes import (
+    StaticRoute,
     HomeRoute,
 )
 
-
 routes = [
+    (StaticRoute(), ["/static/*"]),
     (HomeRoute(), ["/"]),
 ]
 

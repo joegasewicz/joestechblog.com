@@ -1,0 +1,12 @@
+@import "./variables";
+
+body {
+  background-color: $white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+  .main-content {
+    //min-height: calc(100vh - ($navbar-height + $footer-height));
+    overflow: auto;
+    //padding-bottom: $footer-height;
+  }
+}

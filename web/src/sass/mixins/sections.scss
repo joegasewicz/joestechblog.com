@@ -1,0 +1,12 @@
+@mixin section-padding() {
+  padding-top: #{$section-sm-padding}px;
+  padding-bottom: #{$section-sm-padding}px;
+  @include screen-medium() {
+    padding-top: #{$section-med-padding}px;
+    padding-bottom: #{$section-med-padding}px;
+  }
+  @include screen-large() {
+    padding-top: #{$section-lg-padding}px;
+    padding-bottom: #{$section-lg-padding}px;
+  }
+}
