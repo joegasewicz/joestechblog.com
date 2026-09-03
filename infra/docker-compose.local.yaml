@@ -1,0 +1,29 @@
+services:
+  blog_postgres:
+    image: "postgres:14"
+    ports:
+      - "5432:5432"
+    env_file:
+      - ../.env-dev
+    restart: always
+    volumes:
+      - ./.docker/blogdb_volume:/var/lib/postgresql/data/
+
+  mongo:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    env_file:
+      - ../.env-dev
+    volumes:
+      - /Users/joegasewicz/PycharmProjects/townpost/.mongo:/data/db
+
+  forestmq:
+    restart: always
+    image: "josefdigital/forestmq:0.6.2"
+    ports:
+      - "8005:8005"
+    platform: linux/amd64
+
+volumes:
+  blogdb_volume:
